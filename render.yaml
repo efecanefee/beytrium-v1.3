@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: thinkhub-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+      - key: RECEIVER_EMAIL
+        sync: false
+      - key: PORT
+        value: 3001

@@ -1,0 +1,20 @@
+# Email Gönderen Bilgileri (Gmail kullanıyorsanız)
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+
+# Maillerin gönderileceği adres
+RECEIVER_EMAIL=receiver@example.com
+
+# Server Port
+PORT=3001
+
+# NOTLAR:
+# - Gmail kullanıyorsanız, "App Password" oluşturmalısınız:
+#   1. Google hesabınıza gidin (https://myaccount.google.com/)
+#   2. Güvenlik > 2 Adımlı Doğrulama'yı aktifleştirin
+#   3. Uygulama Şifreleri'ne gidin
+#   4. Yeni uygulama şifresi oluşturun
+#   5. Oluşan 16 haneli şifreyi EMAIL_PASS'e yazın
+#
+# - Outlook kullanıyorsanız server/index.js'deki service: 'gmail' kısmını 'outlook' yapın
+

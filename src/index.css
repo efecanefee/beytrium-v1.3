@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  overflow-y: scroll;
+}
+
+/* Carousel Animations - Card Slide Effect */
+@keyframes cardSlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes cardSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animate-slideInRight {
+  animation: cardSlideRight 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-slideInLeft {
+  animation: cardSlideLeft 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Who Component - Slide Up Animations */
+@keyframes slideUpContent {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpImage {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideUpFeature {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUpContent {
+  animation: slideUpContent 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-slideUpImage {
+  animation: slideUpImage 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gradient Animation */
+@keyframes gradient-xy {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-xy {
+  animation: gradient-xy 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: float 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* --- ÖZEL SCROLLBAR TASARIMI --- */
+
+/* Çubuğun genişliği */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Çubuğun arka plan yolu (Track) - Şeffaf olsun */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Hareket eden kısım (Thumb) - Sarı ve Siyah Çerçeveli */
+::-webkit-scrollbar-thumb {
+  background-color: #fbca1f;
+  /* Beykent Sarısı */
+  border: 3px solid black;
+  /* Kalın Siyah Çerçeve */
+  border-radius: 999px;
+  /* Yuvarlak hatlar */
+}
+
+/* Üzerine gelince rengi değişsin (Opsiyonel) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1ABCAA;
+  /* Beykent Mavisi */
+}
+
+/* Firefox için (Opsiyonel) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fbca1f transparent;
+}

@@ -1,0 +1,44 @@
+Admin sayfası
+Ayarlar ve ayarların yanında hakkında sayfası
+ 
+Kulüp yönetim sayfası/ üyeleri görüntüleme ve üye onaylama sayfası. Paylaşım post entegresi
+Kulüp yöneticisi ve rozeti
+
+Giriş sayfasında girilen parola ve parolanın eşleşip eşlenmemesi.
+
+
+Bireysel takip ve mesajlaşma olayı kaldır
+Ana sayfa sadece admine ve kulüp yöneticileri mesaj atabilir
+ 
+Kişiler sadece kulüp ve admin mesaj atabilir.
+
+Ana akış göre diğer sayfa kenarlıklarını küçült
+
+ana akış kısmına basınca başa dönsün
+
+Keşfeti yaklaşan etkinlik tablosu yapalım
+
+Etkinlik bildirim
+
+Profil üst isim (gönderi yazan kısım)
+
+Üyeler üye diye gözükecek öğrenci diye değil
+
+Rol kısmının düzenlenmesi
+
+Şifrenin kısıtlaması admin sayfası sadece admin hesabında görünür olucak
+
+Admin(kulüp yöneticisi)
+SüperAdmin(Biz)
+
+
+
+Ayarlar ve Süper admin sayfası (Yiğit)  
+
+Ana Akış ve Kulüp Yönetimi (Efecan)
+
+Şifre ve Bildirim (mesaj falan), Veri bağlamı (Fatih)
+
+Sunum vs (Muhammed)
+
+Fotolar vs (Yağız)
